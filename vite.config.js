@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  base: "/resturant-website-rimu"
+  base: process.env.VITE_BASE_PATH || "/resturant-website-rimu"
 })
